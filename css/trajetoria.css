@@ -1,0 +1,97 @@
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== FONTE ===== */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fontes/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../fontes/Agrandir-TextBold.otf') format('opentype');
+}
+
+/* ===== PÁGINA ===== */
+html, body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#pagina {
+  padding: 0 3rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 3rem;
+  justify-content: center; /* centraliza os itens */
+}
+nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+nav a:hover { color: #ffffff; }
+
+/* ===== HR ===== */
+hr { border-color: #222;}
+
+/* ===== TÍTULO ===== */
+.Titulo {
+  font-family: 'TheSeasons', Georgia, serif;
+  font-size: 60px;
+  color: #e12020;
+  text-align: left;
+  padding-left: 15rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+section:last-of-type {
+  display: flex;
+  flex-direction: column; /* título em cima, conteúdo embaixo */
+  padding: 1rem 5rem;
+}
+
+.conteudo-traj {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 0;
+}
+
+p {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 1.7rem;
+  font-family: 'Agrandir', 'Consolas', 'Courier New', monospace;
+  transform: scaleY(1.1);
+}
+
+
+img {
+  width: 280px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: -3rem; /* gruda na borda direita, compensando o padding da section */
+}
+
+/* ===== FOOTER ===== */
+footer, .address {
+  font-size: 12px;
+  color: #555555;
+  border-top: 1px solid #222;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+}

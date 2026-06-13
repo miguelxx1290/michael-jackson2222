@@ -1,0 +1,111 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fontes/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../fontes/Agrandir-TextBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AgrandirGrand';
+  src: url('../fontes/Agrandir-GrandLight.otf') format('opentype');
+}
+
+html, body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 3rem;
+  justify-content: center; /* centraliza os itens */
+}
+nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+nav a:hover { color: #ffffff; }
+
+
+hr { border-color: #0a0a0a;   margin: 0 3rem;}
+
+/* ===== TÍTULO ===== */
+.Titulo {
+  font-family: 'TheSeasons', Georgia, serif;
+  font-size: 60px;
+  color: #e12020;
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+h5{
+    font-family: 'AgrandirGrand', Georgia, serif;
+}
+
+p{
+    font-family: 'Agrandir', Georgia, serif;
+}
+
+
+/* ===== GRID ALBUNS ===== */
+.albuns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 3rem 3rem;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  text-align: center;
+}
+
+.album img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.album h5 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.album p {
+  font-size: 13px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+footer, .address {
+  font-size: 12px;
+  color: #555555;
+  border-top: 1px solid #222;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+footer p {
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+}

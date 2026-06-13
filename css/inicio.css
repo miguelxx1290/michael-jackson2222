@@ -1,0 +1,153 @@
+/* No TOPO do seu arquivo CSS, antes de tudo */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fontes/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../fontes/Agrandir-TextBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AgrandirGrand';
+  src: url('../fontes/Agrandir-GrandLight.otf') format('opentype');
+}
+
+#pagina{
+  background-color: black;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: white;
+  font-family: 'Agrandir', 'Consolas', 'Courier New', monospace;
+}
+
+.reidopop{
+  font-family: 'AgrandirGrand', 'Consolas', 'Courier New', monospace;
+}
+
+.address{
+    color: white;
+}
+
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== PÁGINA ===== */
+html, body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#pagina {
+  padding: 0 3rem;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 3rem;
+  justify-content: center; /* centraliza os itens */
+}
+nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+nav a:hover { color: #ffffff; }
+
+/* ===== HR ===== */
+hr { border-color: #0a0a0a; margin-bottom: 2rem; }
+
+
+
+/* ===== TEXTOS ===== */
+h4 {
+  font-size: 13px;
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+.Titulo {
+  font-size: 80px;
+  transform: scaleY(1.1);
+  color: #e12020;
+  font-family: 'TheSeasons', Georgia, Serif;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+h2 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+h4{
+  font-size: 16px;
+}
+
+p {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-family: 'Agrandir', 'Consolas', 'Courier New', monospace;
+  transform: scaleY(1.1);
+}
+.primeirop {
+  font-style: italic;
+  color: #bbbbbb;
+  border-bottom: 1px solid #0a0a0a;
+  padding-bottom: 0.8rem;
+}
+
+/* ===== IMAGEM ===== */
+img {
+  width: 320px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* ===== FOOTER ===== */
+footer, .address {
+  font-size: 12px;
+  color: #555555;
+  border-top: 1px solid #0a0a0a;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: calc(100vh - 60px);
+  padding: 0;
+}
+
+.texto-esquerda {
+  flex: 1;
+  max-width: 55%;
+  margin-top: 0; /* garante que não tem margin negativa */
+}
+
+img {
+  width: 600px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}

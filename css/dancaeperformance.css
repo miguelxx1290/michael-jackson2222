@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fontes/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../fontes/Agrandir-TextBold.otf') format('opentype');
+}
+
+html, body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 3rem;
+  justify-content: center; /* centraliza os itens */
+}
+nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+nav a:hover { color: #ffffff; }
+
+
+hr {
+  border-color: #222;
+  margin: 0 3rem; /* espaço nas laterais */
+}
+
+/* ===== TÍTULO ===== */
+.Titulo {
+  font-family: 'TheSeasons', Georgia, serif;
+  font-size: 60px;
+  color: #e12020;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* ===== BLOCO 1: texto esquerda, imagem direita ===== */
+p{
+    font-family: 'Agrandir', Georgia, serif;
+}
+
+.bloco1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem 3rem; /* mais nas bordas */
+}
+
+.bloco1 p {
+  max-width: 700px; /* texto maior */
+  font-size: 19px; /* letra maior */
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.bloco1 img {
+  width: 350px; /* imagem maior */
+  height: 350px;    
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+/* ===== BLOCO 2: imagem esquerda, texto direita ===== */
+.bloco2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem 3rem; /* mais nas bordas */
+}
+
+.bloco2 img {
+  width: 350px; /* imagem maior */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.bloco2 p {
+  max-width: 700px; /* texto maior */
+  font-size: 19px; /* letra maior */
+  color: #ffffff;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+/* ===== FOOTER ===== */
+footer, .address {
+  font-size: 12px;
+  color: #555555;
+  border-top: 1px solid #222;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+footer p {
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+}
